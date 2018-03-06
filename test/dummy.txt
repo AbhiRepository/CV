@@ -1,0 +1,163 @@
+%% start of file `template.tex'.
+    %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+    %
+    % This work may be distributed and/or modified under the
+    % conditions of the LaTeX Project Public License version 1.3c,
+    % available at http://www.latex-project.org/lppl/.
+
+
+    \documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+    % modern themes
+    \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+    \moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+    %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+    %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+    % character encoding
+    \usepackage[utf8]{inputenc} 
+    \usepackage{fontawesome}
+    \usepackage{setspace}
+    \usepackage{xcolor}
+    % if you are not using xelatex ou lualatex, replace by the encoding you are using
+    %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+    %for multiple columns
+    \usepackage{multicol}
+    % adjust the page margins
+    \usepackage[scale=0.75]{geometry}
+    %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+    %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+    \usepackage{color}
+    \usepackage{import}
+    % personal data
+    \name{}{Abhishek Patel}
+    %\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+    \address{K-005 IIIT Bhubaneswar boys hostel}{Odisha}{India}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+    \phone[mobile]{+91 8319364223}                   % optional, remove / comment the line if not wanted
+    %\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+    %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+    \email{b516002@iiit-bh.ac.in}          % optional, remove / comment the line if not wanted
+    %\homepage{www.myname.webs.com}                         % optional, remove / comment the line if not wanted  % optional, remove / comment the line if not wanted
+    %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+    %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+    % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+    %\makeatletter
+    %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+    %\makeatother
+    %\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+    % bibliography with mutiple entries
+    %\usepackage{multibib}
+    %\newcites{book,misc}{{Books},{Others}}
+    %----------------------------------------------------------------------------------
+    %            content
+    %----------------------------------------------------------------------------------
+    \begin{document}
+    \makecvtitle
+    \small{}
+
+
+    %Experience
+    %____________________________________________________________________________________________________
+
+    \section{Experience}
+    \vspace{6pt}
+    \begin{itemize}
+    \item{\cventry{Dec 2017 to Jan 2018}{Intern}{\textcolor{blue}{Center of Astronomy, IIT Indore}}{}{}{}}
+        \begin{itemize}
+        \item  Guide: Dr. Bhargav Vaidya\\Morphological classification of astrophysical jets using Convolutional neural network and data augmentation\\Tech Stack: Python, Keras, Matplotlib, Astropy
+        \end{itemize}
+    \end{itemize}
+
+
+    %____________________________________________________________________________________________________
+    \section{Hackathon and Event}
+    \vspace{6pt}
+    \begin{itemize}
+    \item{\cventry{Sept 2017}{Google Developer Group Bhubaneswar}{\textcolor{blue}{Finalist : Devfest Hackathon 2017}}{}{}{}}
+        \begin{itemize}
+        \item Was part of team Bloodsheders, We made a project which scrape the review of verified user on different E-commerce website for a given product and did Sentiment analysis on it \\Tech Stack - Python, Scikit learn, NLTK, Selenium\\
+        \end{itemize}
+    \end{itemize}
+
+    \begin{itemize}
+    \item{\cventry{Dec 2016}{IIIT Bhubaneswar}{\textcolor{blue}{Winner : Winter Development challenge 2016}}{}{}{}}
+        \begin{itemize}
+        \item Made an hybrid android application that could track the location of all the employee of an Organisation\\Tech Stack -  Cordova, HTML/CSS, Java script, Php
+        \end{itemize}
+    \end{itemize}
+
+    %____________________________________________________________________________________________________
+    \section{Education}
+    \vspace{5pt}
+    \begin{itemize}
+    \item{\cventry{2016-Present}{BTech Computer Engineering}{IIIT Bhubaneswar}{}{7.78/10.0}{} }
+    \item{\cventry{2013-2015}{Higher Secondary Education}{Kendriya Vidyalaya No. 2 GCF, Jabalpur}{}{87.4\%}{}}
+    \item{\cventry{2003-2013}{Matriculation}{Kendriya Vidyalaya No. 2 GCF, Jabalpur}{}{9.6/10.0}{}}
+    \end{itemize}
+
+    %____________________________________________________________________________________________________
+    \section{Projects}
+    \vspace{6pt}
+    \begin{itemize}
+    \item \textcolor{blue}{\textbf{Pong-using Reinforcement Learning}}
+        \begin{itemize}
+        \item Made a pong player from scratch using policy gradient. It can be seen here \href{https://github.com/AbhiRepository/RL}{Pong} \\Tech Stack - Python,Open-AI\\ \\ \\ \\
+        \end{itemize}
+    \item \textcolor{blue}{\textbf{Sentiment analysis on twitter data}}
+        \begin{itemize}
+        \item  Accessed Twitter live stream and captured tweets using the oauth2 library and Twitter REST API.
+        \item Extracted feature words using Lemmatisation and Stemming, Removed Stop Words and Normalised words with intensely repeating letters\\Tech Stack - Python, Scikit learn, NLTK\\ \\
+        \end{itemize}
+    \item \textcolor{blue}{\textbf{Hibiscut}}
+        \begin{itemize}
+        \item  It's a script that could fetch the notices from intranet portal of IIIT Bhubaneswar and send them to the mobile of all the currently enroll student via text message\\Tech Stack - Python, Selenium, Requests, BeautifulSoup
+        \end{itemize}
+    \end{itemize}
+
+    \section{Achievements and Awards}
+    \vspace{6pt}
+    \begin{itemize}
+    \item \textbf{Winner} : Code Navratri is individual competitive coding event organized by Hackerrank and IIIT Bhubaneswar
+    \vspace{3pt}
+    \item \textbf{Cookoff} : 2 times top 500, in codechef cookoff
+    \vspace{3pt}
+    \item \textbf{Runner up} : Swig'n'code event organize by IIIT-bhubaneswar, on techfest
+    \vspace{3pt}
+    \item \textbf{Runner up} : Competitive coding contest oraganized by ACM chapter of IIIT Bhubaneswar
+    \end{itemize}
+    %\newpage
+
+    \section{Relevant skills}
+    \vspace{6pt}
+    \begin{itemize}
+    \item Computational Statistics : Data analysis, Data Mining, Machine Learning, Artificial Neural Networks
+    \vspace{3pt}
+    \item Programming Languages : C, C++, Python, SQL
+    \vspace{3pt}
+    \item Statistical Tools : Tensorflow, Keras, Numpy, Scipy, Scikit-Learn
+    \vspace{3pt}
+    \item Tools : \LaTeX, Git, Pycharm
+    \end{itemize}
+
+    \section{Interests and extra-curricular activity}
+    \vspace{6pt}
+    \begin{itemize}
+    \item{Reading Books and Surfing Quora.}
+    \vspace{3pt}
+    \item{Participate in all kinds of sports and activities, particularly Badminton, Table tennis and Chess}
+    \vspace{3pt}
+    \item{    Watching Movies and Listening Music.}
+    \vspace{6pt}
+    \end{itemize}
+
+    \section{References}
+    \vspace{6pt}
+    \begin{itemize}
+    \item{Dr. Bhargav vaidya\\Assistant Professor \textit{IIT Indore}\\\textcolor{blue}{bvaidya@iiti.ac.in}}
+    \end{itemize}
+
+    \nocite{*}
+    \bibliographystyle{plain}
+    \bibliography{publications}                 
+    \end{document}
